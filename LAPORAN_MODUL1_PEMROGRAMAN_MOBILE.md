@@ -10,34 +10,34 @@
 
 ### Deskripsi
 
-## Part 1 
+#### Part 1 
 
 The introductions, like who the mentor is, what this course will teach or not teach, and mentions that the course will keep things at high level, not deep diving into every topic that concerns Frontend Architecture.
 
-## Part 2 
+#### Part 2 
 
 The course overview, describes which module teaches what, Materials are from module 1 to module 4, as module 5 will wrap up the module. 
 In module 1 the course will teach the general definition of software architecture and frontend architecture, module 2 will teach about the difference between architecture and design, then module 3 will start to actually design the software/application mainly using domain modeling, and the fourth module material is mainly about implementing, in this part, coding is finally starting. The final module (5) will be wrapping up the whole course, and the mentor will be sharing resources for more research in case more understanding is needed.
 
-## Part 3
+#### Part 3
 
 Software architecture is the structure of a system. The foundation of building blocks where all other pieces of software will sit on top of. According to Ralph Johnson and Martin Fowler, architecture is the decisions you wish you could get right early in the project. Because earlier decisions of software are hard to change because other pieces of software are built on top of it. In that case, architecture is defined as the things that people perceive as hard to change. And then again, they were confused, how can you find the easy stuff or the hard stuff while designing the architecture. So it became "Architecture is about the important stuff... whatever that is." Then again, how do you find the important stuffs? Because of that, in this course, architecture is simply defined as a systems software,  and architecture is a set of significant design decisions about how the software is organized to promote desired quality attributes and other properties. Shortened to "Architecture are decisions", important decisions that are hard to change, that is used to promote desired quality attributes and properties.
 
 in the book "Head First Software Architecture A Learner's Guide to Architectural Thinking" by Raju Gandhi, Mark Richards & Neal Ford
 Architecture is defined into four dimensions, that is, style, characteristics, decisions, and logical components. The four dimensions can be easily mapped to a video game character, as they usually have classes, stats, background and skills. In software architecture, this translates easily, like a class is a architecture style, stats are the strength and weaknesses so its the characteristics, it usually ends with 'ility' or 'ilities' like agility or scalabilities. Like in a video game where a character will favor certain stats, each architecture will also have a different set of priorities when it comes to which characteristics they support. Then its the background story, which is architectural decisions, it is described as structural guides, it is sometimes rules, and most of the times its a guideline. Lastly, a character's skill, the mentor mentions that it maps really well to architecture's logical components, these are usually modules, UI components, design systems, classes, functions, etc. Pretty much all of the building blocks that make the architecture or software. Just like all those aforementioned things make a character, these four dimensions are combined and that makes an architecture
 
-## Part 4
+#### Part 4
 
 Like the previos definition of Architecture, frontend architecture can be similarly defined as "A system's frontend architecture is the set of significant design decisions about how its frontend layer is organized to promote
 desired quality attributes and other properties." Concisely, frontend is important frontend stuff... whatever that is It used to be simple to define frontend and backend, where frontend is it runs on the client and backend runs in the server, but nowadays its not so simple. So its better to think of it as a spectrum, like in the frontend spectrum it can be like CSS, HTML, and client-side JS, and backend has things like databses, APIs or kubernetes. Modern framework sometimes falls in the middle, where they have components that are client sided and server sided, like nextjs or nuxt, or react server components. In this course, frontend is  toward the middle-forward area of the spectrum. In the case of building an app, there are myriads of ways to combine the four dimensions to make what the user sees is the same application, yet it couldnt be any more different when looked at architecturally.
 
-## Part 5
+#### Part 5
 
 Many parts of architecture and software designs overlap, so they're sometimes interchangeable, but there is one difference between them that is important. Architecture and design also can be seen as a spectrum, whereas architecture can be about the structure of the system, and on the design end, its more about code, or the design pattern, to know where a decision lies in this spectrum, it helps to analyze it in different viewpoints. One of them is how hard is it to change, the harder it is, the more architecture is it in nature. Another one is how strategic or how tactical the decision is, architectural decisions typically involve multiple teams, they have longer term implication, or it requires more to think strategically about how to make that decision, while design decisions are more about day to day operations. Architecture issues are high level, they require more context of how other part of the applications, or how all the application work, while design decision are at the level of codes, so we dont need to know it all.
 
 An example on how to put a decision in this spectrum is, deciding on the style of the architecture, it definitely falls more on the architecture side because it checks multiple boxes, in that its hard to change, its strategic, and its a higher level decision. Another example is the one earlier used in the course, to use signals to share global state in the application, it is something that isnt easy to change, and also not that hard, it falls more on the design spectrum, yet also strategic with long term implication, its also more about the code than the structure, overall the decision itself falls on the middle of the spectrum, a bit to the side of design. Why does this matter? The more it falls under the architecture spectrum, the more time to spend thinking about or researching about tbe decision, and also the more people involved or at least aware of the decision, and the more important it is to document it. The more it is about design, the more quickly you can make it, you dont have to align entire teams, or have a meeting on which design patterns to use. It helps to avoid underestimating architectural decisions and overestimating design decisions
 
-## Part 6
+#### Part 6
 
 The frontend architect role is quite vague, because there is no universal job description on what they're supposed to do, traditionally they only create the structure of systems and hand it off to the development team, called the waterfall approach, but because this architecture doesnt work or doesnt really exist anymore, the modern architect write codes, review, and iterate with the team aswell. Three common traits that architects have are, one is that they are responsible for setting technical direction, WIll Larson described it in his book, in that staff engineers and architects speak behalf on their companies technology,  creating technical vision and strategy, aligning the team with that vision,  and making architectural decisions, then writing and writing code. The second trait is that they aply architectural thinking, Mark Richard describes it in his book "Architectural Thinking" into three parts, understanding and analyzing tradeoffs, understanding business drivers and translating it into architectural requirements, and having a wide breath of technical knowledge while still maintaining technical depth.
 Another concept that Mark Richard has is this pryramid of knowledge.
