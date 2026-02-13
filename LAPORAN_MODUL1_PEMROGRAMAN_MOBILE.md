@@ -3,7 +3,9 @@
 ## Foundations
 ---
 **09/02/2026** : Saya menyelesaikan seluruh kursus Modul 1 dan mencatat module 1 part 3 - 6.
+
 **11/02/2026** : Saya pindah catatan ke GitHub agar mudah di perbaiki.
+
 **14/02/2026** : Menambahkan deskripsi untuk part 1-2, serta memperbaiki format.
 
 ### Deskripsi
