@@ -2,10 +2,11 @@
 
 ## Foundations
 ---
-**09/02/2026**
+**09/02/2026** : Saya menyelesaikan seluruh kursus Modul 1 dan mencatat module 1 part 3 - 6.
+**11/02/2026** : Saya pindah catatan ke GitHub agar mudah di perbaiki.
+**14/02/2026** : Menambahkan deskripsi untuk part 1-2, serta memperbaiki format.
 
 ### Deskripsi
-Saya menyelesaikan seluruh kursus Modul 1 dan mencatat beberapa hal.
 
 Part 1 is introductions, like who the mentor is, what this course will teach or not teach, and mentions that the course will keep thing at high level, not deep diving into every topic that concerns Frontend Architecture.
 
