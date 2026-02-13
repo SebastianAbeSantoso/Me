@@ -8,6 +8,8 @@
 
 **14/02/2026** : Menambahkan catatan untuk memuat part 1-2, serta memperbaiki format.
 
+---
+
 ### Deskripsi
 
 #### Part 1 
@@ -45,8 +47,12 @@ The top is what you know, and your mastery, the top two is said as to be your te
 
 Two last things about frontend architecture is that you dont need a title, in a lot of companies, there is no such title, you dont need anyone's permission to care or think about the architecture, you might need some authority to make the architectural decisions, but that comes with other titles such as tech lead. Architecture is not just the responsibility of the architect, it's everyone's job, even if you dont care about the role, you can still make things better for the team by taking care of the architecture
 
+---
+
 ### Insight
 Yang saya dapatkan adalah a, dengan itu saya mencoba b
+
+---
 
 ### Impact
 Hal yang merubah pandangan saya pada X adalah ketika A, B, c
