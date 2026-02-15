@@ -3,58 +3,22 @@ Nama : Sebastian Abe Santoso
 
 NIM : 2410817210002
 ## Foundations
-
----
-
-**09/02/2026** : Saya menyelesaikan seluruh kursus Modul 1 dan mencatat bagian 3 - 6
-
-**11/02/2026** : Saya pindah catatan ke GitHub agar mudah diperbaiki.
-
-**14/02/2026** : Menambahkan catatan untuk memuat part 1-2, serta memperbaiki format.
-
-**15/02/2026** : Mencerna ulang materi, menambah insight & Impact, translasi EN ke ID.
-
 ---
 
 ### Deskripsi
 
-#### Part 1 
+**09/02/2026** : Saya selesai menonton seluruh Modul 1 (bagian 1 - 6) dan mencatat bagian 3 - 6 (materi), di sini saya berfokus untuk membuat fondasi untuk pengetahuan, yang nantinya akan dicerna ulang dengan membanding catatan dengan apa yang di bahas di kursusnya.
 
-Bagian pengantar, seperti siapa mentornya, apa yang akan diajarkan atau tidak diajarkan dalam kursus ini, dan menyebutkan bahwa kursus ini akan menjaga tingkat pembahasan pada level tinggi, tidak akan mendalami setiap topik yang berkaitan dengan frontend architecture.
+**10/02/2026** : Membaca ulang catatan, tetapi belum terlalu paham.
 
-#### Part 2 
+**11/02/2026** : Saya pindah catatan ke GitHub agar mudah diperbaiki, serta catatan dapat diakses kapan saja.
+Link berada di https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/CATATAN_MODUL1_ID.md
 
-Bagian ringkasan, menjelaskan modul mana yang mengajarkan apa pada kursus ini. Materi kursus mencakup modul 1 hingga modul 4, karena modul 5 akan menutup kursus ini. 
-Pada modul 1, kursus akan menjelaskan definisi umum arsitektur perangkat lunak dan arsitektur frontend. Modul 2 akan membahas perbedaan antara arsitektur dan desain, kemudian modul 3 akan mulai merancang perangkat lunak/aplikasi secara praktis menggunakan pemodelan domain, dan materi modul keempat terutama berfokus pada implementasi, di bagian ini, pemrograman akhirnya dimulai. Modul terakhir akan merangkum seluruh kursus, dan mentor akan membagikan sumber daya untuk penelitian lebih lanjut jika diperlukan pemahaman yang lebih mendalam.
+**12/02/2026** : Membuat contoh laporan di Miro dengan seluruh catatan, yang nanti akan dipindah ke GitHub.
 
-#### Part 3
+**14/02/2026** : Menonton ulang serta mencatat bagian 1-2 (pembukaan kursus) untuk melengkapi seluruh catatan, serta memperbaiki format catatan.
 
-Arsitektur perangkat lunak adalah struktur dari suatu sistem, fondasi blok bangunan di mana semua komponen perangkat lunak lainnya akan dibangun di atasnya. Menurut Ralph Johnson dan Martin Fowler, arsitektur adalah keputusan yang harus dikerjakan dengan benar sejak awal proyek. Karena keputusan awal dalam pengembangan perangkat lunak sulit diubah karena komponen perangkat lunak lainnya dibangun di atasnya. Dalam hal ini, arsitektur didefinisikan sebagai hal-hal yang dianggap sulit diubah oleh orang. Namun, mereka bingung, bagaimana cara menemukan hal-hal yang mudah atau sulit saat merancang arsitektur. Jadi, arsitektur menjadi “Arsitektur adalah tentang hal-hal penting... apa pun itu.” Lagi pula, bagaimana cara menemukan hal yang penting? Karena kebingungan itu, dalam kursus ini, arsitektur didefinisikan secara sederhana sebagai kumpulan keputusan desain yang signifikan tentang cara perangkat lunak diorganisasikan untuk mempromosikan atribut kualitas serta properti lainnya yang diinginkan. Disingkat menjadi “Arsitektur adalah keputusan”.
-
-Dalam buku “Head First Software Architecture: A Learner's Guide to Architectural Thinking” karya Raju Gandhi, Mark Richards, dan Neal Ford
-Arsitektur dibagi menjadi empat dimensi, yaitu Architecture Style, Architecture Characteristics, Architecture Decisions, dan Logical Components. Keempat dimensi ini dapat dengan mudah dipetakan ke karakter dalam game, karena karakter biasanya memiliki class, stat, background, dan skills. Dalam arsitektur perangkat lunak, hal ini dapat diterjemahkan dengan mudah, misalnya class adalah style, stat adalah kekuatan dan kelemahan, yaitu characteristic, yang biasanya berakhir dengan ‘ility’ atau ‘ilities’ seperti reliability atau agilities. Seperti dalam permainan video di mana karakter akan lebih memilih stat tertentu, setiap arsitektur juga akan memiliki prioritas yang berbeda dalam hal karakteristik yang didukungnya. Kemudian ada cerita background, yang merupakan decisions, dijelaskan sebagai panduan struktural, terkadang aturan, dan biasanya dalam bentuk pedoman. Terakhir, keterampilan karakter. Mentor menyebutkan bahwa hal ini sangat sesuai dengan logical components, yang biasanya berupa modul, seperti komponen antarmuka pengguna (UI), sistem desain, kelas, fungsi, dan sebagainya. Hampir semua blok bangunan yang membentuk arsitektur atau perangkat lunak. Sama seperti semua hal yang disebutkan tadi membentuk karakter, keempat dimensi ini digabungkan dan itulah yang membentuk arsitektur.
-
-#### Part 4
-
-Seperti definisi arsitektur sebelumnya, arsitektur frontend dapat didefinisikan secara serupa sebagai "kumpulan keputusan desain penting tentang cara lapisan frontend disusun untuk mempromosikan atribut kualitas dan properti lainnya yang diinginkan." Singkatnya, "Frontend adalah hal-hal penting dalam frontend... apa pun itu". Dulu, mendefinisikan frontend dan backend cukup sederhana, di mana frontend berjalan di sisi klien dan backend berjalan di server, tetapi sekarang tidak sesederhana itu. Jadi, lebih baik memikirkannya sebagai spektrum, misalnya di spektrum frontend bisa berupa CSS, HTML, dan JavaScript sisi klien, sedangkan backend mencakup hal-hal seperti database, API, atau Kubernetes. Framework modern kadang-kadang berada di tengah, di mana mereka memiliki komponen yang berjalan di sisi klien dan sisi server, seperti Next.js atau Nuxt, atau komponen server React. Dalam kursus ini, frontend berada di area tengah-depan dari spektrum. Saat membangun aplikasi, ada banyak cara untuk menggabungkan empat dimensi ini sehingga apa yang dilihat pengguna adalah aplikasi yang sama, namun secara architectural bisa sangat berbeda.
-
-#### Part 5
-
-Banyak bagian dari arsitektur dan desain perangkat lunak saling tumpang tindih, sehingga kadang-kadang dapat disamakan, tetapi ada satu perbedaan penting di antara keduanya. Arsitektur dan desain juga dapat dilihat sebagai spektrum, di mana arsitektur berkaitan dengan struktur sistem, sedangkan desain lebih berfokus pada kode atau pola desain. Untuk menentukan di mana suatu keputusan berada dalam spektrum ini, membantu untuk menganalisisnya dari berbagai sudut pandang. Salah satunya adalah seberapa sulit untuk mengubahnya, semakin sulit, semakin bersifat arsitektur. Sudut pandang lain adalah seberapa strategis atau taktis keputusan tersebut. Keputusan arsitektur biasanya melibatkan tim-tim yang berbeda, memiliki implikasi jangka panjang, atau memerlukan pemikiran strategis tentang cara membuat keputusan tersebut, sementara keputusan desain lebih berkaitan dengan operasional sehari-hari. Masalah arsitektur bersifat tingkat tinggi, memerlukan pemahaman konteks tentang bagian lain dari aplikasi atau bagaimana seluruh aplikasi bekerja, sementara keputusan desain berada pada tingkat kode, jadi kita tidak perlu mengetahui semuanya.
-
-Contoh cara menentukan keputusan dalam spektrum ini adalah, misalnya, menentukan gaya arsitektur. Keputusan ini jelas lebih condong ke sisi arsitektur karena memenuhi beberapa kriteria: sulit diubah, bersifat strategis, dan merupakan keputusan tingkat tinggi. Contoh lain adalah yang digunakan sebelumnya dalam kursus, yaitu menggunakan sinyal untuk berbagi keadaan global dalam aplikasi. Ini adalah sesuatu yang tidak mudah diubah, namun juga tidak terlalu sulit. Keputusan ini lebih condong ke spektrum desain, namun juga strategis dengan implikasi jangka panjang. Keputusan ini lebih berkaitan dengan kode daripada struktur. Secara keseluruhan, keputusan ini berada di tengah spektrum, sedikit condong ke arah desain. Mengapa hal ini penting? Semakin keputusan tersebut masuk ke spektrum arsitektur, semakin banyak waktu yang dibutuhkan untuk memikirkan atau meneliti keputusan tersebut, semakin banyak orang yang terlibat atau setidaknya mengetahui keputusan tersebut, dan semakin penting untuk mendokumentasikannya. Semakin keputusan tersebut berkaitan dengan desain, semakin cepat keputusan tersebut akan dibuat, dan tidak perlu menyelaraskan seluruh tim atau mengadakan pertemuan untuk menentukan pola desain mana yang akan digunakan. Hal ini membantu menghindari underestimasi keputusan arsitektur dan overestimasi keputusan desain.
-
-#### Part 6
-
-
-Peran frontend architect cukup kabur, karena tidak ada deskripsi pekerjaan yang universal tentang apa yang seharusnya mereka lakukan. Secara tradisional, mereka hanya membuat struktur sistem dan menyerahkannya kepada tim pengembangan, yang dikenal sebagai pendekatan waterfall. Namun, karena arsitektur ini tidak lagi berfungsi atau tidak benar-benar ada, architect modern menulis kode, meninjau, dan berkolaborasi dengan tim. 
-
-Tiga ciri umum yang dimiliki architect adalah: pertama, mereka bertanggung jawab menetapkan arah teknis. Will Larson menjelaskannya dalam bukunya, bahwa engineer dan architect berbicara atas nama teknologi perusahaan, menciptakan visi dan strategi teknis, menyelaraskan tim dengan visi tersebut, mengambil keputusan arsitektur, lalu menulis kode. Ciri kedua adalah mereka menerapkan pemikiran arsitektur. Mark Richard menjelaskannya dalam bukunya “Architectural Thinking” menjadi tiga bagian: memahami dan menganalisis trade-off, memahami faktor bisnis dan menerjemahkannya menjadi persyaratan arsitektur, serta memiliki pengetahuan teknis yang luas sambil tetap mempertahankan kedalaman teknis. 
-Konsep lain yang dimiliki Mark Richard adalah piramida pengetahuan. Puncaknya adalah apa yang Anda ketahui dan keahlian Anda. Dua lapisan teratas disebut sebagai cakupan teknis Anda, yaitu hal-hal yang Anda pahami pada tingkat yang dangkal. Untuk menjadi architect yang baik, Anda harus memiliki cakupan teknis yang luas agar dapat mengambil keputusan di berbagai bidang. Anda tidak perlu menjadi ahli dalam satu hal, karena lebih baik mengetahui lebih banyak tentang berbagai bidang daripada hanya fokus pada satu bidang dalam hal ini. Ciri terakhir dari architect modern adalah melakukan “glue work” yang disebut oleh Tanya Reilly, yaitu pekerjaan yang tidak terlihat namun sangat penting yang harus dilakukan agar hal-hal lain dapat dikerjakan. Hal ini meliputi penulisan dokumentasi, mengadakan pertemuan, serta melakukan sponsorship dan mentoring. Sebagai senior engineer, Anda memiliki tanggung jawab untuk mengembangkan tim di sekitar Anda, artinya pengetahuan Anda tentang arsitektur dan desain sebelumnya, Anda memiliki tanggung jawab untuk berbagi pengetahuan tersebut dengan seluruh tim.
-
-Dua hal terakhir tentang arsitektur frontend adalah bahwa Anda tidak memerlukan gelar tertentu, di banyak perusahaan, tidak ada gelar semacam itu, Anda tidak memerlukan izin dari siapa pun untuk peduli atau memikirkan arsitektur, Anda mungkin memerlukan wewenang untuk membuat keputusan arsitektur, tetapi itu datang dengan gelar lain seperti tech lead. Arsitektur bukan hanya tanggung jawab architect, itu adalah tugas semua orang. Bahkan jika Anda tidak peduli dengan peran tersebut, Anda tetap dapat membuat hal-hal menjadi lebih baik untuk tim dengan memperhatikan arsitektur.
-
----
+**15/02/2026** : Mencerna ulang materi untuk membuat insight & Impact, translasi seluruh catatan yang awalnya EN ke ID, dan memperbaiki ulang laporan & catatan.
 
 ### Insight
 
@@ -80,3 +44,5 @@ Memahami hal ini mengubah persepsi saya tentang tim yang biasanya memiliki manaj
 
 https://progressivecoder.substack.com/p/is-the-software-architect-job-role
 Dalam newsletter ini, mereka memang menyebutkan bahwa “ivory tower architect” adalah alasan utama mengapa peran ini tidak disukai, yaitu orang-orang yang melakukan pekerjaan yang sama namun mendapatkan gelar khusus, serta mereka yang membuat diagram yang rumit secara tidak perlu. Mereka juga menyebutkan bahwa arsitektur seharusnya menjadi perhatian setiap pengembang, bukan hanya architect, dan memperlakukan architect sebagai panduan, bukan manajer tunggal. Dengan alur kerja modern yang lebih kolaboratif, peran "solo architect” telah meredup, digantikan oleh architect yang kolaboratif.
+
+---
