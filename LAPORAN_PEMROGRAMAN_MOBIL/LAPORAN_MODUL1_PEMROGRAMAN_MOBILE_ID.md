@@ -8,7 +8,7 @@
 
 **14/02/2026** : Menambahkan catatan untuk memuat part 1-2, serta memperbaiki format.
 
-**15/02/2026** : Mencerna ulang materi dan menambah insight & Impact
+**15/02/2026** : Mencerna ulang materi, menambah insight & Impact, translasi EN ke ID.
 
 ---
 
