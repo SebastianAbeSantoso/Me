@@ -1,7 +1,11 @@
 # Laporan Pemrograman Mobile
+Nama : Sebastian Abe Santoso
 
+NIM : 2410817210002
 ## Foundations
+
 ---
+
 **09/02/2026** : Saya menyelesaikan seluruh kursus Modul 1 dan mencatat bagian 3 - 6
 
 **11/02/2026** : Saya pindah catatan ke GitHub agar mudah diperbaiki.
