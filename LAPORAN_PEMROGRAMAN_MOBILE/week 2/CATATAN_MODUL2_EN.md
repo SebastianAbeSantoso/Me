@@ -68,9 +68,18 @@ Second exercise yayyyyyyyyyyy, putting together the influential functional requi
 
 ### Chapter 15
 
+#### 25/02/26
+
 Haha, my list looks mostly different, but the mentor did mentioned that it might be completely different so it's fine.
 
 ### Chapter 16
 
-3. Architectural Decisions - The decisions that falls into the architectural end of the spectrum of "Design or Architecture"
+#### 25/02/26
 
+3. Architectural Decisions
+- The decisions that falls into the architectural end of the spectrum of "Design or Architecture"
+- The decisions that are made at the start, hard to change, and significant. Most of the decision early in the project are achitectural because there's no information to design.
+- Example: Deciding what framework to use, making decisions about version control, making decisions about how to keep the codebase organized, making decisions about using a third-party vendors to support an IFR, making decisions about observability and monitoring
+- Don't try to make every architectural decision at this point, this will block the whole development project and lead to analysis paralysis.
+- Why is more important than the What, as an example, using Next.js for the framework, but rather than what to use, the more important point is why use Next.js, a simple way of thinking about this is using ADRs, template provided: https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/locales/en/templates/decision-record-template-by-michael-nygard/index.md
+- Architectural Decision Records (ADRs), allows documenting architecturally significant decisions, overtime this record will form a log and becomea book that tells a story about the whole architecture, an akashic records for the architecture or some sorts. It's simply divided into Title, status, context, decision, and consequences.
