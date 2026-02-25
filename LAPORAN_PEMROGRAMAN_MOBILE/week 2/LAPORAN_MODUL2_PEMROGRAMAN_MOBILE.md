@@ -71,7 +71,7 @@ Terakhir, mereka tidak hanya aturan-aturan, tetapi juga dapat dirakit seperti pe
 1. Architectural Driver: "Kenapa ini ada?" atau "Mengapa sistem ini dibangun, nilai apa yang harus diberikan, dan faktor apa yang paling memengaruhi bentuk arsitekturnya?"
 2. Architectural Requirements: "Apa yang harus dicapai?" atau "Berdasarkan tujuan, nilai, dan faktor pendorong tersebut, kriteria keberhasilan apa yang harus dipenuhi sistem ini?"
 3. Architectural Decisions: "Bagaimana kita membuatnya?" atau "Dengan tujuan, nilai, dan kriteria keberhasilan yang telah ditetapkan, pendekatan arsitektural apa yang paling tepat, dan kompromi apa yang secara sadar kita terima?"
-- - Setelah ketiga itu, maka pertanyaan terakhir adalah "Apa Konsekuensinya?", karena kita tidak hanya menentukan hal-hal, tetapi juga merekam apa efeknya atau kegunaannya.
+- - Setelah ketiga pertanyaan itu, maka pertanyaan terakhir adalah "Apa konsekuensinya?" Karena kita tidak hanya menentukan pilihan, tetapi juga merekam apa efek atau kegunaannya.
 
 ---
 
