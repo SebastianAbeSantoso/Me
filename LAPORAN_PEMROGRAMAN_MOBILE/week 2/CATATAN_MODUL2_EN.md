@@ -49,14 +49,15 @@ My diagram is a bit different from the one the mentor made, i spotted quite a fe
 
 - It was mentioned in module 1 that the same application can have very different architectures, here it is mentioned that it may happen due to the drivers, some common ones are Business Goals, the reason for building the architecture. Quality attributes, also mentioned in module 1, it is things like performance, scalability, reliability, mantainability, etc. The  '-ility' and 'ilities'. There is a baseline level for quality attributes, for example, there is a baseline for security, or like performance, so the point is not to mention all of these, but to mention the most important ones, that may influence the architecture. Constraints, which are usually divided into two, technical constraints, which come with a particular language or framework that is used, and business constraints, which are usually related to budget, or deadline, it is non-negotiable as it is a constraint.  They are helpful in the way that they limit the scope of a problem. Functional Requirements, all of the things that your application do, in the case of FullSnack, the FRs may include being able to search for food items, browse restaurants, managing the cart, login, create an account, etc. Not all FRs are influental, so part of this job is deciding which are significant. Team's experience + Knowledge, this will definitely influence the technology decisions, like which patterns to use. The experience and knowledge of an architect mentioned in module 1 will also be important here, because the technical breadth about all the different things they know will influence how they build the architecture. Lastly, is Technology Trends, which will also influence to some degree, this doesn't mean you have to follow the newest things, because more often than not, you are more likely to be following the old and stable technology, but being aware of the latest trends and being up to date is part of the job as an architect.
 
-2. Architectural Requirements - Success criteria of your architecture, the things it needs to do in order to be successful, this will drive your decisions.
-
-3. Architectural Decisions - The decisions that falls into the architectural end of the spectrum of "Design or Architecture"
-
-
 ### Chapter 13
 
-x
+2. Architectural Requirements
+
+- Success criteria of your architecture, the things it needs to do in order to be successful, this will drive your decisions and is driven by the aforementioned architecture drivers. Can be thought of as a checklist.
+
+- On a real project, these documents won't be as organized in the beginning, where you have to think of the requirements yourself. There are a couple ways to do this, one is essentially talking to people, maybe with stakeholders, potential users, PMs, and designers, and see what they care about in the architecture, of course you do not have to comply with everything, but it will give you an idea. The mentor also mentioned a couple of resources that will help in this process, one of which is the book "Design It!", the mentor also gave a template on how to make the documents, https://charca.notion.site/Architectural-Requirements-Doc-f47fe67cd5ba408d840306e01eb38081. In the course, the requirements are categorized by the different types of drivers from CH13, such as Business Goals, Constraints, Quality Attributes, Influential Functional Requirements, and other Influencers.
+
+- Business goals are often obvious and simple, but often taken as granted, but they are clearly important because they are what other people might have in mind for the architecture, like CEOs wanting double of customers in a year, customer wanting to order delicious foods that are delivered ASAP. Constraints here are unbreakable rules or guidelines, an example is that it must only be deployed on AWS infrastructure because thats the only thing your DevOps team supports, another example is a business constraint where it must ship on X date and X year, T time from now, which is a time constraint, it doesn't have to be fully featured as it will help determine the priority of the features. Quality Attributes are important attributes that you want defined and the priority of it, it can also be seen as non-functional requirements, like Performance, an example is a user must be able load the app using 4G connection within 5 seconds is high priority, or Scalability, where the codebase should be modularized to allow incrasing number of frontend developers to work in parallel is high priority. Influential FRs are self-explanatory, and Other Influencers are things that come into play as work is continued on the architecture, like the frontend team is only a single team of 4 developers, which is expected to be tripled over the next year, which may change the team composition. Another example is every frontend developer on the team has experience working with React and Next.js, and some are also comfortable working with Vue.js and Laravel, and not everyone is comfortable working with TS.
 
 ### Chapter 14
 
@@ -68,4 +69,5 @@ x
 
 ### Chapter 16
 
-x
+3. Architectural Decisions - The decisions that falls into the architectural end of the spectrum of "Design or Architecture"
+
