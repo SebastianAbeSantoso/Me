@@ -37,11 +37,22 @@ This is the first exercise of the course, which is drawing the container diagram
 
 #### 23/02/26
 
-My diagram is a bit different from the one the mentor made, i spotted quite a few mistakes on mine, however it was a short attempt at drawing, as suggested by the mentor at chapter 10. One mistake that mainly annoys me is the fact that i didn't have the internal dotted line around the web apps like the one the mentor made, i only made the fullsnack system box, in that case, it is a bit unclear. I'll improve on it when i need to.
+My diagram is a bit different from the one the mentor made, i spotted quite a few mistakes on mine, as it was a short attempt at drawing the diagram, as suggested by the mentor at chapter 10. One mistake that mainly annoys me is the fact that i didn't have the internal dotted line around the web apps like the one the mentor made, i only made the fullsnack system box, in that case, it is a bit unclear. I'll improve on it when i need to.
 
 ### Chapter 12
 
-x
+#### 25/02/26
+
+1. Architectural Drivers
+
+- Things that will influence your architecture, this will determine your requirements
+
+- It was mentioned in module 1 that the same application can have very different architectures, here it is mentioned that it may happen due to the drivers, some common ones are Business Goals, the reason for building the architecture. Quality attributes, also mentioned in module 1, it is things like performance, scalability, reliability, mantainability, etc. The  '-ility' and 'ilities'. There is a baseline level for quality attributes, for example, there is a baseline for security, or like performance, so the point is not to mention all of these, but to mention the most important ones, that may influence the architecture. Constraints, which are usually divided into two, technical constraints, which come with a particular language or framework that is used, and business constraints, which are usually related to budget, or deadline, it is non-negotiable as it is a constraint.  They are helpful in the way that they limit the scope of a problem. Functional Requirements, all of the things that your application do, in the case of FullSnack, the FRs may include being able to search for food items, browse restaurants, managing the cart, login, create an account, etc. Not all FRs are influental, so part of this job is deciding which are significant. Team's experience + Knowledge, this will definitely influence the technology decisions, like which patterns to use. The experience and knowledge of an architect mentioned in module 1 will also be important here, because the technical breadth about all the different things they know will influence how they build the architecture. Lastly, is Technology Trends, which will also influence to some degree, this doesn't mean you have to follow the newest things, because more often than not, you are more likely to be following the old and stable technology, but being aware of the latest trends and being up to date is part of the job as an architect.
+
+2. Architectural Requirements - Success criteria of your architecture, the things it needs to do in order to be successful, this will drive your decisions.
+
+3. Architectural Decisions - The decisions that falls into the architectural end of the spectrum of "Design or Architecture"
+
 
 ### Chapter 13
 
