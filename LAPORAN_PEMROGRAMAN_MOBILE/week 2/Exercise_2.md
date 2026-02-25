@@ -40,6 +40,8 @@ This section lists all of the main functional requirements of FullSnack's web ap
 - Customers can view ratings and reviews from other users.
 - Customers can receive a notification if a restaurant responds to one of their reviews.
 
+---
+
 ### Influential Functional Requirements
 #### Authentication
 - Customers can browse the app without being authenticated.
