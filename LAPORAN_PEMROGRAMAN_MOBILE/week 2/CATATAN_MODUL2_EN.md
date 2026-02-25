@@ -68,7 +68,7 @@ Second exercise yayyyyyyyyyyy, putting together the influential functional requi
 
 ### Chapter 15
 
-x
+Haha, my list looks mostly different, but the mentor did mentioned that it might be completely different so it's fine.
 
 ### Chapter 16
 
