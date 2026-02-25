@@ -61,7 +61,10 @@ My diagram is a bit different from the one the mentor made, i spotted quite a fe
 
 ### Chapter 14
 
-x
+#### 25/02/26
+
+Second exercise yayyyyyyyyyyy, putting together the influential functional requirements, which are FRs that are architecturally significant, and may influence the architecture. Since the FRs are already listed, there is no need to make stuff up, just finding out which ones are influential.
+
 
 ### Chapter 15
 
