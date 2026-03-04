@@ -13,7 +13,14 @@ Saya juga menyelesaikan laporan ini dalam hari ini.
 
 ### Insight
 
-Saya disini dapat pemahaman berupa entitas, yang merupakan balok bangunan utama dalam sebuah domain, merepresentasikan sebuah konsep dalam dunia asli, seperti Customer, Driver, dll. Entitas bersifat abstrak, berarti bisa digambar pada diagram, tetapi tidak dapat diimplementasikan dalam kode secara langsung, perlu representasi seperti penggunaan model, contohnya dengan class, interface, type, ataupun service. Sebuah module juga merupakan balok bangunan, tetapi pada aplikasi. Ketika aplikasi dipecah, level pertama adalah
+Saya disini dapat pemahaman berupa entitas, yang merupakan balok bangunan utama dalam sebuah domain, merepresentasikan sebuah konsep dalam dunia asli, seperti Customer, Driver, dll. Entitas bersifat abstrak, berarti bisa digambar pada diagram, tetapi tidak dapat diimplementasikan dalam kode secara langsung, perlu representasi seperti penggunaan model, contohnya dengan class, interface, type, ataupun service. 
+
+Sebuah module juga merupakan balok bangunan, tetapi pada aplikasi. Ketika aplikasi dipecah, level pertama adalah membaginya menjadi module, kadang-kadang entitas memiliki hubungan 1:1 kepada module, tetapi tidak wajib. Selanjutnya adalah komponen, karena ini tidak abstrak, biasanya langsung terlihat di implementasinya pada kode.
+
+Untuk mencari entitas serta atribut dan operasinya dapat menggunakan Domain Modeling, yaitu proses membuat sebuah gambaran sederhana mengenai entitas, atribut, perilaku, yang berguna untuk menjembatani antara kebutuhan dunia asli, dan implementasi teknis. Biasanya penggunaan kata benda mengindikasikan entitas, dan penggunaan kata kerja mengindikasikan operasi / aksi yang bisa dilakukan. Mengapa menggunakan Domain Modeling?
+- Memberi nama konsisten antar entitas
+- Meluruskan model data dengan spesifikasi UI
+- Membangun tanggungjawab entitas
 
 ### Impact
 
