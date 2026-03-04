@@ -35,7 +35,7 @@ A couple differences i see between mentor's and mine's, like RestaurantCategory,
 
 #### 4 Maret 2026
 
-x
+In module II, the C4 model was explained, but mostly on layer 1-2, in this chapter, the third level will be explained. In the c4 Model, the components, or called by the mentor, "modules" as components are taken by like UI components, e.g react components. Modules is the top level concerns of the app, when breaking down the app, the first thing to do is breaking them into modules. A good way to visualize them is to make up routes based on the design brief and visualize them, like for example is google.com/images for images, google.com/.... etc etc. Some modules are entities, but it is good to be clear that not all entities are modules, and not all modules are entities. Routes and modules aren't 1:1 either. an example given by the mentor is subroutes (fullsnack.com/restaurant/:id/item/:id) which is a subroute to restaurants, but can be considered another module, and there are some modules that don't belong to a particular route, an example is chrome's bookmark function, it's a module but is not route, but shows up on every page. This is focused on naming modules for now, in the next module of the course, implementation, will be where the relationships are defines, like dependencies.
 
 ### Chapter 23
 
