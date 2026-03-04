@@ -17,12 +17,13 @@ Entities are the main building blocks of the domain, in the case is FullSnack, i
 
 #### 4 Maret 2026
 
-x
+Domain modeling is a method for discovering entities and describing their attributes and operations, in data engineering, its used to define database schema, and in OOP, its for classes, interfaces, and hierarchy, in frontend, its to organize structure and align with ui specs. Nouns in the FRs typically refer to entities, and verbs is the action that they can take. Another way to find out is through the UI specs to find out the attributes and operations. A simple way to define is just to write down known entities and it's attributes and operations, and find out more along the way. WHY do this? 1. naming things (giving entities names), if entities are not named then the one who implements it will name it, which can cause dissonance among the naming systems. Entities are the most likely things to survive, so to preserve readability, you have to name them correctly. 2. Align data model to the UI, if you try mapping the data at once, it will just become a nested mess of complications, by modeling the data model based on the UI, you will create encapsulation and decreases complexity. 3. Establish responsibilities, for something to happen, there are multiple ways to do it, and by establishing this early on, you can find more time to brainstorm on it's established responsibility, even if there is just a little of it. Similar to the iteration process, you don't have to finish it immediately, and can go back later.
 
 ### Chapter 20
 
 #### 4 Maret 2026
 
+exercise 3 yayy, completing the domain model of the FullSnack domain model. Going through the known FRs and UI specs, and try to identify the remaining entities, operations, and attributes. completing the model is not optimum here, it's better to find out the relationships first.
 
 ### Chapter 21
 
