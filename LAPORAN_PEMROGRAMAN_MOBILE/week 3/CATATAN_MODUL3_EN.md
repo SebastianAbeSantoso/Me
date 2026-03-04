@@ -23,13 +23,13 @@ Domain modeling is a method for discovering entities and describing their attrib
 
 #### 4 Maret 2026
 
-exercise 3 yayy, completing the domain model of the FullSnack domain model. Going through the known FRs and UI specs, and try to identify the remaining entities, operations, and attributes. completing the model is not optimum here, it's better to find out the relationships first.
+exercise 3 yayy, completing the domain model of the FullSnack domain model. Going through the known FRs and UI specs, and try to identify the remaining entities, operations, and attributes. completing the model is not optimum here, it's better to find out the relationships first. Here i made the entities first, and then mapped what it can do, can't do, and how it potentially interacts with other entities, idk how to link them if they do interact so i only made simple attributes and operations without relationships. my attempt here: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/Exercise_3.md
 
 ### Chapter 21
 
 #### 4 Maret 2026
 
-a
+A couple differences i see between mentor's and mine's, like RestaurantCategory, MenuItem (mine is FoodItem, but theres also drinks so mine is wrong), MenuItemCategory i don't have, menuitemoption i dont have aswell. for attributes and operations theres a lot of different ones with the data type im unaware of aswell, and he made a class diagram aswell which i am lacking of. But one thing i have advantage over is Driver, which the mentor does not have
 
 ### Chapter 22
 
