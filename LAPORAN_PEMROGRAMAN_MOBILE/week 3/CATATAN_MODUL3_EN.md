@@ -47,16 +47,16 @@ A simple way to make a low-level diagram is just to create a box and arrows unti
 
 #### 4 Maret 2026
 
-exercise 4 yayy, from the last chapter it's about sequence diagrams. The old exercise for diagram was good at conveying high-level process, but the real process is much more complicated, and sequence diagram is a good way to bridge that and bridge the complexity. The task is to create a sequence diagram for real time order status changes
+exercise 4 yayy, from the last chapter it's about sequence diagrams. The old exercise for diagram was good at conveying high-level process, but the real process is much more complicated, and sequence diagram is a good way to bridge that and bridge the complexity. The task is to create a sequence diagram for real time order status changes. I tried creating it (i had to compare to the answer a couple times because i wasnt familiar with sequence diagrams yet). Because i don't understand the syntax for mermaid, as the mentor suggested, i used LLM to create the syntax, here is the result: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/Exercise_4.jpeg
 
 ### Chapter 25
 
 #### 4 Maret 2026
 
-x
+Berdasarkan hasil saya, terlihat beberapa perbedaan, punya saya mengunakan balok alt yang memiliki nested loop, ini secara khusus memberi opsi alternatif jika hanya websocket yang gagal, dan punya mentor tidak menggunakan alt,tetapi menggunakan connection fails yang menghasilkan x dalam web app lifeline yang berarti aplikasi diterminasi. walau saya rasa logika struktur menang hasil punya saya (dan prompting), tetapi dalam naming tetap lebih jelas punya mentor
 
 ### Chapter 26
 
 #### 4 Maret 2026
 
-x
+Design docs, an informal place to describe the solution to a problem in some levels of detail and then it can be shared to get feedback. It can be divided into two levels, high-level and low-level. High-level is mostly used for large-scale, like architecture decisions, while low-level is like how you might implement a feature in a certain code block. A simple doc structure is overview (1-2 paragraphs), context (what needs to be known, can be diagrams), goals and non-goals (describes scope), high level design (things about architecture, like container diagram, 4 dimensions of architecture), alternatives considered (things you've considered and why you did and did not go with), detailed design (low level design doc/pseudocode), timeline, risks and open questions, appendex (relating documents/references). As advised by the mentor, the docs should be as short as possible.
