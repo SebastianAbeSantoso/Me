@@ -8,8 +8,7 @@ NIM : 2410817210002
 
 ### Deskripsi
 
-Saya menonton dan mencatat seluruh module 3, Designing dan mengerjakan exercise 3 dan 4.
-Saya juga menyelesaikan laporan ini dalam hari ini.
+Saya menonton dan mencatat seluruh module 3, Designing. Mengerjakan exercise 3 dan 4, dan juga menyelesaikan laporan ini dalam hari ini.
 
 ### Insight
 
@@ -22,15 +21,15 @@ Untuk mencari entitas serta atribut dan operasinya dapat menggunakan Domain Mode
 - Meluruskan model data dengan spesifikasi UI
 - Membangun tanggungjawab entitas
 
+Dalam exercise 3, saya dapat penerangan mengenai Domain Modeling, entitas adalah sebuah konsep abstrak, saya pikir sebagai "sesuatu yang memiliki identitas, tahan lama, dan dapat dibedakan dengan yang lain", misalnya dalam universitas itu Mahasiswa, atau Dosen. Atribut bisa dijelaskan sebagai "apa yang dipunyai entitas" yang menggambarkan keadaannya, seperti Mahasiswa memiliki NIM atau Nama. Terakhir, operations, yaitu perilaku domain, lebih lengkapnya adalah "Perilaku atau fungsi yang secara logis menempel pada entitas dalam domain dan merepresentasikan aksi yang bermakna sesuai aturan bisnis. Contoh operasi adalah, misalnya untuk Mahasiswa, daftarKelas(idKelas), dan untuk Dosen, mengampuKelas(idKelas).
+
+Sequence Diagram dalam exercise 4 juga menarik bagi saya, karena hanya belajar sekilas pada mata kuliah APS, tetapi ternyata sangat dibutuhkan untuk menggambarkan proses pada tingkat menengah, awal sampai akhir. Tetapi ribet membuatnya secara manual, sehingga lebih mudah untuk membuat flowchart untuk prototyping cepat, atau cuman proyek personal.
+
+Hal terakhir yang memberi saya insight adalah Software Design Document yang dijelaskan oleh mentornya pada chapter terakhir module 3, karena sangat mirip dengan Game Design Document pada game development, keduanya membahas "Apa yang akan dibuat, dan mengapa?" Menjelaskan aturan, logika, struktur, komponen, serta meluruskan seluruh tim sebagai acuan untuk menyamakan pemikiran tentang apa yang ingin dibuat
+
 ### Impact
 
-Saat memikirkan ketiga arsitektur itu sebagai hal yang didalam game dev, saya jadi lebih paham menggunakannya diluar frontend architecture, bisa juga diaplikasikan di lain. Karena pada intinya, Architectural drivers mendorong arsitektur, dan memengaruhi Requirements. Requirements adalah kriteria sukses sebuah arsitektur, yang nantinya akan membuat Decisions. Decisions adalah keputusan awal yang penting dan sulit diubah, dan bisa memengaruhi drivers. Ketiga ini bisa disebuat dengan loop, bukan linear, karena mereka bisa memengaruhi satu sama lain. 
-
-Terakhir, mereka tidak hanya aturan-aturan, tetapi juga dapat dirakit seperti pertanyaan:
-1. Architectural Driver: "Kenapa ini ada?" atau "Mengapa sistem ini dibangun, nilai apa yang harus diberikan, dan faktor apa yang paling memengaruhi bentuk arsitekturnya?"
-2. Architectural Requirements: "Apa yang harus dicapai?" atau "Berdasarkan tujuan, nilai, dan faktor pendorong tersebut, kriteria keberhasilan apa yang harus dipenuhi sistem ini?"
-3. Architectural Decisions: "Bagaimana kita membuatnya?" atau "Dengan tujuan, nilai, dan kriteria keberhasilan yang telah ditetapkan, pendekatan arsitektural apa yang paling tepat, dan kompromi apa yang secara sadar kita terima?"
-- - Setelah ketiga pertanyaan itu, maka pertanyaan terakhir adalah "Apa konsekuensinya?" Karena kita tidak hanya menentukan pilihan, tetapi juga merekam apa efek atau kegunaannya.
+Sebelum belajar mengenai hal-hal seperti entitas, atribut, operasi saya tidak enggan untuk membuat function/class yang tidak terlalu memikirkan "apa" "kenapa" dan hubungannya bagaimana, tetapi sekarang saya memikir dua kali, karena bagi saya sekarang lebih penting menentukan hubungan antar module atau function daripada langsung coding, yang awalnya berasa seperti prosedural, menjadi berpikir separti komponen-komponen yang dijelaskan mentornya. Domain Modeling juga mempengaruhi saya dengan memberikan opsi visual ringan untuk mencari entitas, atribut, dan operasinya lebih mudah, seperti flowchart. Saya belum pernah berpikir bahwa entitas dan spesifikasi UI tersambung, tetapi saat dijelaskan mentor saya dapat penerangan, ternyata backend dan frontend sangat terkait, yang awalnya saya kira sangat pisan dan terenkapsulasi. Walau saya tidak pasti akan menggunakan semua temuan saya pada modul ini, tetapi impact terbesarnya adalah perubahan pola pikir dan cara saya mendekati sebuah masalah di masa depan.
 
 ---
 
