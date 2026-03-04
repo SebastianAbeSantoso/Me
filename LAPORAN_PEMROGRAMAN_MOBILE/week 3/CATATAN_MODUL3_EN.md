@@ -41,13 +41,13 @@ In module II, the C4 model was explained, but mostly on layer 1-2, in this chapt
 
 #### 4 Maret 2026
 
-x
+A simple way to make a low-level diagram is just to create a box and arrows until something is made and decided, because it is low level, its good to sort out your thoughts and communicating it with the team, but because it is low level, it cant be for documentation which changes a lot. Common types are flowcharts, which is good for logic or a process, then state diagrams, which is good for changes in state, next is class diagrams which is mainly used for OOP, but it can be used to represent entities. Finally, it is a sequence diagram, which is good for whole processes from start to finish, pretty much a sequence that can be used to discuss things around the system processes.
 
 ### Chapter 24
 
 #### 4 Maret 2026
 
-x
+exercise 4 yayy, from the last chapter it's about sequence diagrams. The old exercise for diagram was good at conveying high-level process, but the real process is much more complicated, and sequence diagram is a good way to bridge that and bridge the complexity. The task is to create a sequence diagram for real time order status changes
 
 ### Chapter 25
 
