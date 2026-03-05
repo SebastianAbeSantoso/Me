@@ -8,7 +8,9 @@ NIM : 2410817210002
 
 ### Deskripsi
 
-Saya menonton dan mencatat seluruh module 3, Designing. Mengerjakan exercise 3 dan 4, dan juga menyelesaikan laporan ini dalam hari ini.
+Saya menonton dan mencatat seluruh module 3, Designing. Mengerjakan exercise 3 dan 4, dan juga menyelesaikan laporan ini dalam hari ini. Untuk link exercise 3 dan 4 sebagai berikut:
+- Exercise 3: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/Exercise_3.md
+- Exercise 4: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/Exercise_4.jpeg
 
 ### Insight
 
@@ -35,5 +37,3 @@ Sebelum belajar mengenai hal-hal seperti entitas, atribut, operasi saya tidak en
 
 - Laporan ini berada di: https://github.com/SebastianAbeSantoso/Me/edit/main/LAPORAN_PEMROGRAMAN_MOBILE/week%202/LAPORAN_MODUL2_PEMROGRAMAN_MOBILE.md
 - Catatan berada di: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/CATATAN_MODUL3_EN.md
-- Exercise 3: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/Exercise_3.md
-- Exercise 4: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/Exercise_4.jpeg
