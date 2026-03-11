@@ -31,7 +31,7 @@ Thinking in component-based framework like react implies that stuff is always br
 
 #### 11 Maret 2026
 
-x
+yay first exercise of this module.....which is catagorizing or breaking down the restaurant module into one of the four components mentioned in chapter 30, and "maybe" implement it into the codebase << this is unneeded, just create a breakdown and folder hierarchy, dont worry about shared, and there is only one screen.
 
 ### Chapter 32
 
