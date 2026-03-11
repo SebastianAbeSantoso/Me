@@ -43,7 +43,9 @@ Comparing my attempt: https://github.com/SebastianAbeSantoso/Me/tree/main/LAPORA
 
 #### 11 Maret 2026
 
-z
+This part is about how to represent domain entities, like restaurants or customers as examples in earlier modules, in the actual codebase. Since these entities are the core building blocks of the domain, they show up everywhere from the UI to the database. The mentor mentions that while it's common to just drop simple fetch functions in the endpoints directly inside components to hit the API, doing that for your core entities brings up a few problems. The raw data comes back exactly as the API formats it, meaning you get weird backend conventions like nested "attributes" and "relationships" objects, extra data you don't even need to render, or incomplete data that forces you to make extra calls just to get simple things like category names.
+
+To solve these inefficiencies, a "model" layer is introduced as an abstraction right between the API and the frontend, which simplifies and makes data more efficient, only giving what is needed. For example is the function getRestaurant which promises the restaurant object as async, here you can grab the attributes or relationships, this is where aggregation of multiple endpoints happen. The mentor metnions that he's passing the entire object, it might not be optimal, but it's passing the restaurant information, which takes an object of the restaurant entity type, and prints the data. In a real app, it's going to be much more efficient and elegant, but here is essentially a way to pass the data from an API all the way to the components that need it, and respects the shape of the entity, and how we want it to look in front. It's a much more simplified view of the entity compared what we got, which may look to be a small improvement, but it will runs lots of times, and inefficiency here will go a long way.
 
 ### Chapter 34
 
