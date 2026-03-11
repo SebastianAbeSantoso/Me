@@ -5,13 +5,13 @@
 
 #### 11 Maret 2026
 
-x
+The part where the mentor mentions that we'll be writing code huh, or at least a part of it as a reference how the high-level decisions translate into code. Like the modules defined in the previous modules, also start to break the modules into components.
 
 ### Chapter 28
 
 #### 11 Maret 2026
 
-x
+It seem's like something called turborepo will be used, which is a tool to manage mono repos. Mentor mentions that mono repos are good for projects that have multiple packages and applications, helps run simpler in the long term. The app is simply divided into 3, which is core API, docs and web. next is packages and ui. The docs arent of importance yet, the API is a mockup and the web is a simple next.js app with only implemented home and search page so far.
 
 ### Chapter 29
 
