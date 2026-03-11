@@ -37,7 +37,7 @@ yay first exercise of this module.....which is catagorizing or breaking down the
 
 #### 11 Maret 2026
 
-x
+Comparing my attempt: https://github.com/SebastianAbeSantoso/Me/tree/main/LAPORAN_PEMROGRAMAN_MOBILE/week%204/exercise_5 with the mentor's was interesting, a bit of the names and structures were different, mainly was i didn't put footnotes and combined it into a single shared box, also the "free" part i put into menu, the mentor did not, so that's also the difference in the hierarchy
 
 ### Chapter 33
 
