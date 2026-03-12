@@ -2,38 +2,54 @@
 Nama : Sebastian Abe Santoso
 
 NIM : 2410817210002
-## Designing
+## Implementing
 
-### 4 Maret 2026
+### 11 Maret 2026
 
 ### Deskripsi
 
-Saya menonton dan mencatat seluruh module 3, Designing. Mengerjakan exercise 3 dan 4, dan juga menyelesaikan laporan ini dalam hari ini. Untuk link exercise 3 dan 4 sebagai berikut:
-- Exercise 3: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/Exercise_3.md
-- Exercise 4: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/Exercise_4.jpeg
+Saya menonton dan mencatat seluruh module 4, Implementing. Mengerjakan exercise 5 dan 6, dan juga menyelesaikan laporan ini dalam hari ini. Untuk link exercise 5 dan 6 sebagai berikut:
+- Exercise 5: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%204/exercise_5.png, untuk exercise 5 bagian hierarchy, dapat dicek di link exercise 6.
+- Exercise 6: https://github.com/SebastianAbeSantoso/Me/tree/main/LAPORAN_PEMROGRAMAN_MOBILE/week%204/fullsnack_exercise_5_6
 
 ### Insight
 
-Saya disini dapat pemahaman berupa entitas, yang merupakan balok bangunan utama dalam sebuah domain, merepresentasikan sebuah konsep dalam dunia asli, seperti Customer, Driver, dll. Entitas bersifat abstrak, berarti bisa digambar pada diagram, tetapi tidak dapat diimplementasikan dalam kode secara langsung, perlu representasi seperti penggunaan model, contohnya dengan class, interface, type, ataupun service. 
+Dalam bagian ini, saya mempelajari mengenai mentranslasikan high-level decisions menjadi kode, seperti pemecahan menjadi modul dan komponen di module-module sebelumnya, dalam kursus ini menggunakan turborepo, yaitu tool untuk manajemen proyek skala besar dan jangka panjang untuk monorepo. Aplikasi dipecah menjadi beberapa bagian terpisah: core API yang hanya mockup, docs, web yang berbasis Next.js, serta packages dan ui.
 
-Sebuah module juga merupakan balok bangunan, tetapi pada aplikasi. Ketika aplikasi dipecah, level pertama adalah membaginya menjadi module, kadang-kadang entitas memiliki hubungan 1:1 kepada module, tetapi tidak wajib. Selanjutnya adalah komponen, karena ini tidak abstrak, biasanya langsung terlihat di implementasinya pada kode.
+Pemahaman yang menarik di sini adalah mengenai struktur direktorinya, mengikuti konvensi bawaan framework dapat menjebak ke dalam nested routing, yaitu modul yang bersarang terlalu dalam, jadi lebih baik menggunakan struktur flat. Di sini mentor bilang bahwa dia juga tidak terlalu suka mengikuti konvensi, misalnya, modul menu item tetap diletakkan di level atas, daripada dikubur di dalam route restaurant walau ada menu di route restaurant. Hal ini membuat navigasi codebase jauh lebih mudah. Dalam praktiknya, folder app hanya sebagai router saja untuk menangani URL dan rendering, sedangkan seluruh implementasi logika yang berat diisolasi dengan aman di dalam hierarki modulnya masing-masing.
 
-Untuk mencari entitas serta atribut dan operasinya dapat menggunakan Domain Modeling, yaitu proses membuat sebuah gambaran sederhana mengenai entitas, atribut, perilaku, yang berguna untuk menjembatani antara kebutuhan dunia asli, dan implementasi teknis. Biasanya penggunaan kata benda mengindikasikan entitas, dan penggunaan kata kerja mengindikasikan operasi / aksi yang bisa dilakukan. Mengapa menggunakan Domain Modeling?
-- Memberi nama konsisten antar entitas
-- Meluruskan model data dengan spesifikasi UI
-- Membangun tanggungjawab entitas
+Di frontend, banyak framework yang berbasis komponen, yang dimulai oleh react dengan mottonya "Thinking in React", di sini saya memahamai bahwa UI selalu dipecah menjadi komponen komponen yang menyusun suatu frontend. Pendekatan dalam kursus ini menggunakannya dengan membagi elemen ke dalam empat hierarki representasi:
+- Screens: Titik masuk utama dari sebuah modul, biasanya hanya memiliki satu seperti modul delivery, atau beberapa jika ada pergantian layar seperti modul Search.
+- Features: Di definisi mentor sebagai komponen skala besar yang memiliki fungsionalitas kompleks sehingga membutuhkan struktur internal folder sendiri seperti fitur filtering restoran.
+- Components: Elemen UI berskala kecil seperti dropdown .
+- Shared: Wadah untuk elemen yang tidak terikat pada satu fitur spesifik, seperti layout, design system, atau utility.
 
-Dalam exercise 3, saya dapat penerangan mengenai Domain Modeling, entitas adalah sebuah konsep abstrak, saya pikir sebagai "sesuatu yang memiliki identitas, tahan lama, dan dapat dibedakan dengan yang lain", misalnya dalam universitas itu Mahasiswa, atau Dosen. Atribut bisa dijelaskan sebagai "apa yang dipunyai entitas" yang menggambarkan keadaannya, seperti Mahasiswa memiliki NIM atau Nama. Terakhir, operations, yaitu perilaku domain, lebih lengkapnya adalah "Perilaku atau fungsi yang secara logis menempel pada entitas dalam domain dan merepresentasikan aksi yang bermakna sesuai aturan bisnis. Contoh operasi adalah, misalnya untuk Mahasiswa, daftarKelas(idKelas), dan untuk Dosen, mengampuKelas(idKelas).
+Dalam evaluasi exercise 5, saya menyadari bahwa implementasi pemisahan ini bisa bersifat subjektif antar developer, misalnya mentor penempatan bagian footnotes. Selain itu, struktur hierarki folder juga terdapat perbedaan, disini saya merasa constraint dan guideline pada chapter terakhir sangatlah penting.
 
-Sequence Diagram dalam exercise 4 juga menarik bagi saya, karena hanya belajar sekilas pada mata kuliah APS, tetapi ternyata sangat dibutuhkan untuk menggambarkan proses pada tingkat menengah, awal sampai akhir. Tetapi ribet membuatnya secara manual, sehingga lebih mudah untuk membuat flowchart untuk prototyping cepat, atau cuman proyek personal.
+Pemahaman penting lainnya adalah bagaimana merepresentasikan entitas domain di dalam kode, seperti melakukan pemanggilan fetch API secara langsung di dalam komponen frontend adalah praktik yang bermasalah. Data mentah dari backend sering membawa struktur konvensi yang tidak relevan untuk UI, seperti nested object berupa attributes dan relationships, data berlebih yang tidak diperlukan, atau data yang kurang sehingga memaksa melakukan pemanggilan endpoint berkali-kali. Karena itu, harus ada implementasi layer model yang berguna sebagai abstraksi di antara API dan frontend. Model ini bertugas mengambil data, membentuknya sesuai kebutuhan, menggabungkan beberapa endpoint jika perlu, dan mengembalikannya dalam bentuk objek dan benar-benar siap dirender oleh UI.
 
-Hal terakhir yang memberi saya insight adalah Software Design Document yang dijelaskan oleh mentornya pada chapter terakhir module 3, karena sangat mirip dengan Game Design Document pada game development, keduanya membahas "Apa yang akan dibuat, dan mengapa?" Menjelaskan aturan, logika, struktur, komponen, serta meluruskan seluruh tim sebagai acuan untuk menyamakan pemikiran tentang apa yang ingin dibuat
+Dalam implementasi exercise 6, saya mendapat pemahaman terkait Next.js, framework ini memiliki mekanisme caching bawaan, sehingga jika memanggil endpoint berkali-kali, hanya satu saja requestnya sehingga tidak membebankan. Mentor juga memberi rule of thumb, sebaiknya proses fetching dilakukan dari level feature, bukan component untuk menjaga decoupling.
+
+Terakhir, saya menyadari bahwa sebaik apa pun arsitektur awal dibangun, semakin membesarnya codebase, kompleksitas dan masalah pasti akan muncul. Oleh karena itu, guardrails dan constraints wajib didefinisikan sejak awal. Mentor memberi sugesti beberapa tools untuk menjaga batasan ini:
+- Dependency Cruiser & Commonality: Untuk memastikan dan memvalidasi aturan dependensi, misalnya menjaga agar modul satu tidak sembarangan bergantung pada modul lain.
+- Bundlesize & Performance Budgets: Untuk membatasi ukuran beban aplikasi dan memastikan metrik Core Web Vitals tetap terjaga demi performa.
+- SonarLint: Ekstensi vscode untuk menganalisis kualitas desain kode dan memantau cognitive complexity, memastikan kode tetap mudah dibaca dan tidak terlalu rumit bagi developer lain.
 
 ### Impact
 
-Sebelum belajar mengenai hal-hal seperti entitas, atribut, operasi saya tidak enggan untuk membuat function/class yang tidak terlalu memikirkan "apa" "kenapa" dan hubungannya bagaimana, tetapi sekarang saya memikir dua kali, karena bagi saya sekarang lebih penting menentukan hubungan antar module atau function daripada langsung coding, yang awalnya berasa seperti prosedural, menjadi berpikir separti komponen-komponen yang dijelaskan mentornya. Domain Modeling juga mempengaruhi saya dengan memberikan opsi visual ringan untuk mencari entitas, atribut, dan operasinya lebih mudah, seperti flowchart. Saya belum pernah berpikir bahwa entitas dan spesifikasi UI tersambung, tetapi saat dijelaskan mentor saya dapat penerangan, ternyata backend dan frontend sangat terkait, yang awalnya saya kira sangat pisan dan terenkapsulasi. Walau saya tidak pasti akan menggunakan semua temuan saya pada modul ini, tetapi impact terbesarnya adalah perubahan pola pikir dan cara saya mendekati sebuah masalah di masa depan.
+Dalam modul ini, saya mempelajari mengenai translasi high-level decisions menjadi kode nyata, walau saya tidak mengerti Next.js, tetapi tetap dapat dicerna sebagai contoh translasi keputusan high-level seperti diagram menjadi low-level seperti kode, sehingga saya dapat bayangan jika ingin membuat diagram dan merubahnya menjadi kode di masa depan.
+
+Yang paling menarik bagi saya adalah directory hierarchy, ternyata sangat penting dan juga dapat digunakan sebagai komponen diagram dalam bentuk hierarki, saya dulu hanya membuat folder dan file tanpa memikir, atau hierarki yang tergantung framework atau bahasa pemrograman yang digunakan, jadi penerapan hierarki dan komponen menjadi empat bagian seperti screen, feature, component, dan shared menurut saya itu cukup penting sekarang. Hierarki ini juga cukup terasa pada exercise 5 dan 6, di mana mereka disusun secara sengaja. Exercise 5 cukup mengajari mengenai memecah sebuah page menjadi komponen komponen frontend yang kemudian dirubah menjadi kode pada exercise 6.
+
+Dulu saya tidak terlalu memikir, tetapi melakukan fetch dalam frontend memang sangatlah bermasalah. Data mentah tidak berproses sering memiliki kekurangan yang tidak dibutuhkan oleh komponen frontend, sehingga mentor mengusulkan untuk memberi layer abstraksi berupa model, yang bertugas untuk mengambil data, membentuknya sesuai kebutuhan, dan mengembalikannya dalam bentuk objek yang siap dirender oleh UI.
+
+Berbagai developer memiliki cara berpikir yang berbeda, sehingga pembentukan guardrails dan constraint cukup penting, dan sebaiknya didefinisikan sejak awal proyek. Tanpa adanya batasan yang tegas, arsitektur awal yang bersih dapat dengan cepat menjadi berantakan seiring bertambah besarnya codebase dan kompleksitas fitur. Saya belum pernah merasakan ini karena belum sempat berkolaborasi dengan orang lain mengenai kode, tetapi ini akan saya pikirkan lebih lanjut saat diperlukan.
+
+Walau saya tidak pasti akan menggunakan semua tools pada modul ini, seperti Turborepo, Dependency Cruiser, atau metrik performa secara langsung saat ini, tetapi saya baru mengenal bahwa terdapat alat alat seperti ini, sehingga impact terbesarnya adalah pengetahuan berupa berbagai macam alat yang memengaruhi cara saya mendekati sebuah masalah arsitektur di masa depan.
+
+Secara menyeluruh, saya merasa kursus ini cukup membantu saya mengenal dasar-dasar arsitektur frontend, mulai dari pemahaman fondasi arsitektur di awal, hingga sekarang yang berakhir pada tahap implementasi nyata di dalam kode.
 
 ---
 
-- Laporan ini berada di: https://github.com/SebastianAbeSantoso/Me/edit/main/LAPORAN_PEMROGRAMAN_MOBILE/week%202/LAPORAN_MODUL2_PEMROGRAMAN_MOBILE.md
-- Catatan berada di: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%203/CATATAN_MODUL3_EN.md
+- Laporan ini berada di: https://github.com/SebastianAbeSantoso/Me/edit/main/LAPORAN_PEMROGRAMAN_MOBILE/week%204/LAPORAN_MODUL4_PEMROGRAMAN_MOBILE.md
+- Catatan berada di: https://github.com/SebastianAbeSantoso/Me/blob/main/LAPORAN_PEMROGRAMAN_MOBILE/week%204/CATATAN_MODUL4_EN.md
