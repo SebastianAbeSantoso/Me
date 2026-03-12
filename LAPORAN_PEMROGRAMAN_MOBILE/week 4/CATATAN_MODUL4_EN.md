@@ -51,7 +51,7 @@ To solve these inefficiencies, a "model" layer is introduced as an abstraction r
 
 #### 11 Maret 2026
 
-x
+Exercise 6: Implementing a model for the restaurant ratings entity, there are two: top and bottom of the menu, in the endpoint call the information you get is the top (summary rating), to get the other reviews theres a review endpoint to call, the exercise is to create a model function to call the bottom ratings. Not just the simplified like the current one, but also the number of ratings. 1. Creating the fetch function from the reviews endpoint, 2. Create a model function to call via restaurantid and can give back an object in the format in the video, 3. use the model function in the ui
 
 ### Chapter 35
 
