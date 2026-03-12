@@ -57,7 +57,7 @@ Exercise 6: Implementing a model for the restaurant ratings entity, there are tw
 
 #### 11 Maret 2026
 
-x
+I... lowkirkenuenly do not have an idea on how to solve this, because i do not even have an inkling of knowledge on Next.js so i just learned by following the answer given by the mentor, there are a couple of interesting things the mentor mentions, like in Next.js and similar frameworks there are methods to cache so subsequent fetches dont require networks since it's already cached, theres also the mentor's rule of thumb where he makes the function call from the ratings feature for data, rather than component for the decoupling.
 
 ### Chapter 36
 
