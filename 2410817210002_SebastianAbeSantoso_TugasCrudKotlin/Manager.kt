@@ -29,39 +29,39 @@ class StoryManager(){
 
     fun run(){
         print(backstory)
-    while (true) {
-        when (state) {
-            AppState.CRUD -> {
-                crudUi()
-
-                val answer = readln().toIntOrNull() ?: -1
-
-                crudUiLogic(answer)
-            }
-
-            AppState.SESSION -> {
-                sessionUi(sessionHistory)
-
-                val answer = readln().toIntOrNull() ?: -1
-
-                sessionUiLogic(answer, sessionHistory, chatHistory)
-            }
-
-            AppState.CHAT -> {
-                val sessionId = currentSessionId
-
-                if (sessionId == null) {
-                    state = AppState.SESSION
-                    continue
+        while (true) {
+            when (state) {
+                AppState.CRUD -> {
+                    crudUi()
+    
+                    val answer = readln().toIntOrNull() ?: -1
+    
+                    crudUiLogic(answer)
                 }
-
-                chatUi(chatHistory, sessionId)
-                val answer = readln().toIntOrNull()
-                if (answer != null) chatUiLogic(answer, chatHistory, sessionId)
-                else println(invalidInput)
+    
+                AppState.SESSION -> {
+                    sessionUi(sessionHistory)
+    
+                    val answer = readln().toIntOrNull() ?: -1
+    
+                    sessionUiLogic(answer, sessionHistory, chatHistory)
+                }
+    
+                AppState.CHAT -> {
+                    val sessionId = currentSessionId
+    
+                    if (sessionId == null) {
+                        state = AppState.SESSION
+                        continue
+                    }
+    
+                    chatUi(chatHistory, sessionId)
+                    val answer = readln().toIntOrNull()
+                    if (answer != null) chatUiLogic(answer, chatHistory, sessionId)
+                    else println(invalidInput)
+                    }
                 }
             }
-        }
     }
 
     fun crudUiLogic(answer: Int) {
