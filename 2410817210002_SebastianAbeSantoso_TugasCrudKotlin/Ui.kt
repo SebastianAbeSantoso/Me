@@ -1,8 +1,8 @@
 fun appExplanation() {
     println("Welcome to my StoryCrafting CRUD! \n" +
             "In here you can create sessions and write dialogue-based stories. \n" +
-            "Data is not persistent so please be carefuL!\n" +
-            "You can start by pressing 1 to go to sessions to create a story ◝(ᵔᗜᵔ)◜")
+            "Data is not persistent so please be careful!\n" +
+            "You can start by pressing 1 to go to sessions and create a story ◝(ᵔᗜᵔ)◜")
 }
 
 fun crudUi() {
@@ -34,9 +34,10 @@ fun chatUi(chats: MutableList<Chat>, sessionId: Int) {
     if (filtered.isEmpty()) println("No chats yet, try adding some~")
     else filtered.forEach {
         val actionText = it.action?.let { act -> "*$act* " } ?: ""
-        println("[${it.id}] [${it.character}] $actionText${it.dialogue}")
+        println("[${it.id}] [${it.character}] $actionText ${it.dialogue}")
     }
 
+    println("\n")
     println("1. Create a chat~")
     println("2. Edit a chat~")
     println("3. Delete a chat~")

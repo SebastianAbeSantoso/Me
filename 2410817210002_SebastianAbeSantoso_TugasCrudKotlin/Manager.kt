@@ -16,11 +16,14 @@ class StoryManager(){
     val sessionHistory = mutableListOf<StorySession>()
     val chatHistory = mutableListOf<Chat>()
 
+    val invalidInput = "Invalid option~ please try again \"( – ⌓ – )"
+
     fun run(){
     while (true) {
         when (state) {
             AppState.CRUD -> {
                 crudUi()
+
                 val answer = readln().toIntOrNull() ?: -1
 
                 crudUiLogic(answer)
@@ -28,6 +31,7 @@ class StoryManager(){
 
             AppState.SESSION -> {
                 sessionUi(sessionHistory)
+
                 val answer = readln().toIntOrNull() ?: -1
 
                 sessionUiLogic(answer, sessionHistory, chatHistory)
@@ -35,6 +39,7 @@ class StoryManager(){
 
             AppState.CHAT -> {
                 val sessionId = currentSessionId
+
                 if (sessionId == null) {
                     state = AppState.SESSION
                     continue
@@ -43,7 +48,7 @@ class StoryManager(){
                 chatUi(chatHistory, sessionId)
                 val answer = readln().toIntOrNull()
                 if (answer != null) chatUiLogic(answer, chatHistory, sessionId)
-                else println("Invalid input")
+                else println(invalidInput)
                 }
             }
         }
@@ -54,7 +59,7 @@ class StoryManager(){
             1 -> state = AppState.SESSION
             2 -> appExplanation()
             0 -> exitProcess(0)
-            else -> println("Invalid option~ please try again \"( – ⌓ – )")
+            else -> println(invalidInput)
         }
     }
 
@@ -66,7 +71,7 @@ class StoryManager(){
             4 -> editSession(sessions)
             5 -> state = AppState.CRUD
             0 -> exitProcess(0)
-            else -> println("Invalid option~ please try again \"( – ⌓ – )")
+            else -> println(invalidInput)
         }
     }
 
@@ -80,7 +85,7 @@ class StoryManager(){
                 state = AppState.SESSION
             }
             0 -> exitProcess(0)
-            else -> println("Invalid option~ please try again \"( – ⌓ – )")
+            else -> println(invalidInput)
         }
     }
 
@@ -95,19 +100,21 @@ class StoryManager(){
         println("Session ID:")
         val id = readln().toIntOrNull() ?: return
 
-        sessions.removeIf { it.id == id }
-        chats.removeIf { it.sessionId == id }
+        sessions.removeIf {it.id == id}
+        chats.removeIf {it.sessionId == id}
     }
 
     fun enterSession(sessions: MutableList<StorySession>) {
         println("Session ID:")
         val id = readln().toIntOrNull() ?: return
 
-        if (sessions.any { it.id == id }) {
+        val session = sessions.find {it.id == id}
+
+        if (session != null) {
             currentSessionId = id
             state = AppState.CHAT
         } else {
-            println("Not found")
+            println("Session not found~ please enter a correct ID")
         }
     }
 
@@ -116,7 +123,7 @@ class StoryManager(){
         val character = readln()
 
         println("Action (optional):")
-        val action = readln().takeIf { it.isNotBlank() }
+        val action = readln().takeIf {it.isNotBlank() }
 
         println("Dialogue:")
         val dialogue = readln()
@@ -130,9 +137,7 @@ class StoryManager(){
                 dialogue,
                 LocalDateTime.now()
             )
-        ).apply {
-            println("Dialogue created for $character")
-        }
+        ).also {println("\nDialogue created for $character") }
     }
 
     fun editChat(chats: MutableList<Chat>, sessionId: Int) {
@@ -140,45 +145,53 @@ class StoryManager(){
         val id = readln().toIntOrNull() ?: return
 
         val index = chats.indexOfFirst { it.id == id && it.sessionId == sessionId }
-        if (index == -1) return
+        if (index < 0) return
 
         val old = chats[index]
 
         println("New action (optional):")
-        val newAction = readln().ifEmpty { old.action }
+        val newAction = readln().ifBlank {old.action }
         println("New dialogue:")
-        val newDialogue = readln().ifBlank { old.dialogue }
+        val newDialogue = readln().ifBlank {old.dialogue }
 
         chats[index] = old.copy(
             action = newAction,
             dialogue = newDialogue,
             timestamp = LocalDateTime.now()
-        )
+        ).also {println("\nChat updated for ${old.character}")}
     }
 
     fun deleteChat(chats: MutableList<Chat>, sessionId: Int) {
         println("Chat ID:")
         val id = readln().toIntOrNull() ?: return
 
-        chats.removeIf { it.id == id && it.sessionId == sessionId }
+        val removed = chats.removeIf { it.id == id && it.sessionId == sessionId }
+
+        if (removed) println("Chat removed~")
+        else println("Chat not found, please enter a correct Chat ID~")
     }
 
     fun editSession(sessions: MutableList<StorySession>) {
         println("Session ID:")
         val id = readln().toIntOrNull() ?: return
 
-        val index = sessions.indexOfFirst { it.id == id }
+        val index = sessions.indexOfFirst {it.id == id}
 
         if (index == -1) {
-            println("Not found")
+            println("Id not found~ please enter a correct session ID")
             return
         }
 
         val old = sessions[index]
 
         println("New title:")
-        val newTitle = readln().ifBlank { old.title }
+        val newTitle = readln().ifBlank {old.title}
 
-        sessions[index] = old.copy(title = newTitle)
+        if (newTitle == old.title) {
+            println("No changes made~")
+        } else {
+            sessions[index] = old.copy(title = newTitle)
+            println("\nSession name has been edited to $newTitle~")
+        }
     }
 }
