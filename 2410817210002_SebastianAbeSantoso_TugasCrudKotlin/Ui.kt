@@ -9,21 +9,21 @@ fun crudUi() {
     println("\nStoryCrafting CRUD")
     println("1. Go to sessions")
     println("2. About this CRUD")
+    println("3. Create a backstory")
+    println("4. Show backstory~")
     println("0. Exit")
 }
 
 fun sessionUi(sessions: MutableList<StorySession>) {
     println("\nSessions:")
     if (sessions.isEmpty()) println("No sessions yet")
-    else sessions.forEach {
-        println("ID: ${it.id} | ${it.title}")
-    }
 
-    println("1. Create a session~")
-    println("2. Delete a session~")
-    println("3. Enter a session~")
-    println("4. Edit session name~")
-    println("5. Back to homepage~")
+    println("1. Show your sessionS~")
+    println("2. Create a session~")
+    println("3. Delete a session~")
+    println("4. Enter a session~")
+    println("5. Edit session name~")
+    println("6. Back to homepage~")
     println("0. Exit")
 }
 

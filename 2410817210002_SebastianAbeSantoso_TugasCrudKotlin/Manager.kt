@@ -7,10 +7,19 @@ enum class AppState {
 }
 
 class StoryManager(){
+    var backstory: String = ""
+        get() = field.ifBlank {
+            "\nNo backstory for the CRUD has been written yet~\n"
+        }
+        set(value) {
+            field = value.trim().replaceFirstChar { it.uppercase() }
+        }
+
     val nextSessionId = AtomicInteger(0)
     val nextChatId = AtomicInteger(0)
     
     var state: AppState = AppState.CRUD
+
     var currentSessionId: Int? = null
 
     val sessionHistory = mutableListOf<StorySession>()
@@ -19,6 +28,7 @@ class StoryManager(){
     val invalidInput = "Invalid option~ please try again \"( – ⌓ – )"
 
     fun run(){
+        print(backstory)
     while (true) {
         when (state) {
             AppState.CRUD -> {
@@ -58,6 +68,8 @@ class StoryManager(){
         when (answer) {
             1 -> state = AppState.SESSION
             2 -> appExplanation()
+            3 -> createBackstory()
+            4 -> showBackstory()
             0 -> exitProcess(0)
             else -> println(invalidInput)
         }
@@ -65,11 +77,18 @@ class StoryManager(){
 
     fun sessionUiLogic(answer: Int, sessions: MutableList<StorySession>, chats: MutableList<Chat>) {
         when (answer) {
-            1 -> createSession(sessions)
-            2 -> deleteSession(sessions, chats)
-            3 -> enterSession(sessions)
-            4 -> editSession(sessions)
-            5 -> state = AppState.CRUD
+            1 -> showSessions(sessions)
+            2 -> createSession(sessions)
+            3 -> deleteSession(sessions, chats)
+            4 -> {
+                showSessions(sessions)
+                enterSession(sessions)
+            }
+            5 -> {
+                showSessions(sessions)
+                editSession(sessions)
+            }
+            6 -> state = AppState.CRUD
             0 -> exitProcess(0)
             else -> println(invalidInput)
         }
@@ -86,6 +105,23 @@ class StoryManager(){
             }
             0 -> exitProcess(0)
             else -> println(invalidInput)
+        }
+    }
+
+    fun createBackstory(){
+        println("Enter a backstory~:")
+        backstory = readln()
+        println("Backstory saved!")
+
+    }
+
+    fun showBackstory(){
+        println(backstory)
+    }
+
+    fun showSessions(sessions: MutableList<StorySession>) {
+        sessions.forEach {
+            println("ID: ${it.id} | ${it.title}")
         }
     }
 
@@ -143,7 +179,6 @@ class StoryManager(){
     fun editChat(chats: MutableList<Chat>, sessionId: Int) {
         println("Chat ID:")
         val id = readln().toIntOrNull() ?: return
-
         val index = chats.indexOfFirst { it.id == id && it.sessionId == sessionId }
         if (index < 0) return
 

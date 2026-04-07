@@ -3,7 +3,7 @@ import java.time.LocalDateTime
 data class StorySession(
     val title: String,
     val id: Int,
-    val created: LocalDateTime
+    val created: LocalDateTime,
 )
 
 data class Chat(
