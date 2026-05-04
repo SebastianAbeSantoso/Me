@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/char1" android:text="@string/character_1" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char2" android:text="@string/character_2" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char3" android:text="@string/character_3" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char4" android:text="@string/character_4" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char5" android:text="@string/character_5" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char6" android:text="@string/character_6" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char7" android:text="@string/character_7" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char8" android:text="@string/character_8" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char9" android:text="@string/character_9" android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <Button android:id="@+id/char10" android:text="@string/character_10" android:layout_height="match_parent" android:layout_width="match_parent"/>
+
+    </LinearLayout>
+</ScrollView>

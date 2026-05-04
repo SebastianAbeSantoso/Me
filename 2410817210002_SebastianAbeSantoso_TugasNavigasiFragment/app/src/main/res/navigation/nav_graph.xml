@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/character1Fragment"
+        android:name="com.example.fragmentnavigation.Character1Fragment"
+        android:label="Character1"/>
+
+    <fragment
+        android:id="@+id/character2Fragment"
+        android:name="com.example.fragmentnavigation.Character2Fragment"
+        android:label="Character2"/>
+
+    <fragment
+        android:id="@+id/character3Fragment"
+        android:name="com.example.fragmentnavigation.Character3Fragment"
+        android:label="Character3"/>
+
+    <fragment
+        android:id="@+id/character4Fragment"
+        android:name="com.example.fragmentnavigation.Character4Fragment"
+        android:label="Character4"/>
+
+    <fragment
+        android:id="@+id/character5Fragment"
+        android:name="com.example.fragmentnavigation.Character5Fragment"
+        android:label="Character5"/>
+
+    <fragment
+        android:id="@+id/character6Fragment"
+        android:name="com.example.fragmentnavigation.Character6Fragment"
+        android:label="Character6"/>
+
+    <fragment
+        android:id="@+id/character7Fragment"
+        android:name="com.example.fragmentnavigation.Character7Fragment"
+        android:label="Character7"/>
+
+    <fragment
+        android:id="@+id/character8Fragment"
+        android:name="com.example.fragmentnavigation.Character8Fragment"
+        android:label="Character8"/>
+
+    <fragment
+        android:id="@+id/character9Fragment"
+        android:name="com.example.fragmentnavigation.Character9Fragment"
+        android:label="Character9"/>
+
+    <fragment
+        android:id="@+id/character10Fragment"
+        android:name="com.example.fragmentnavigation.Character10Fragment"
+        android:label="Character10"/>
+
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.example.fragmentnavigation.CharacterListFragment"
+        android:label="CharacterList"/>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fragmentnavigation.HomeFragment"
+        android:label="Home"/>
+</navigation>
