@@ -97,7 +97,6 @@ fun ItemCard(
         verticalAlignment = Alignment.CenterVertically
     ) {
         ImageBox(number = item.number)
-
         Spacer(modifier = Modifier.width(12.dp))
 
         Column(
